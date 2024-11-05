@@ -1,0 +1,17 @@
+﻿  Starting remote build
+  Compiling sources:
+  main.cpp
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(294,23): message : required from here
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(138,5): warning : catching polymorphic type ‘class std::bad_alloc’ by value [-Wcatch-value=]
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(310,17): message : required from here
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(212,5): warning : catching polymorphic type ‘class std::bad_alloc’ by value [-Wcatch-value=]
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(318,22): message : required from here
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(26,9): warning : catching polymorphic type ‘class std::bad_alloc’ by value [-Wcatch-value=]
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(336,23): message : required from here
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(138,5): warning : catching polymorphic type ‘class std::bad_alloc’ by value [-Wcatch-value=]
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(353,16): message : required from here
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(212,5): warning : catching polymorphic type ‘class std::bad_alloc’ by value [-Wcatch-value=]
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(363,15): message : required from here
+Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\main.cpp(106,5): warning : catching polymorphic type ‘class std::bad_alloc’ by value [-Wcatch-value=]
+  Linking objects
+  ADT Priority Queue.vcxproj -> Q:\C++\C ++ (2)\ADT Priority Queue\ADT Priority Queue\bin\x64\Debug\ADT Priority Queue.out

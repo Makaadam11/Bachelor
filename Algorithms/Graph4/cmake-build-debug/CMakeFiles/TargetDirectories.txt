@@ -1,0 +1,3 @@
+Q:/programy_C_II/Graf4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+Q:/programy_C_II/Graf4/cmake-build-debug/CMakeFiles/Graf4.dir
+Q:/programy_C_II/Graf4/cmake-build-debug/CMakeFiles/edit_cache.dir

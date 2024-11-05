@@ -1,0 +1,7 @@
+
+all:
+    g++ Main.cpp
+
+
+tar:
+	tar -cvzf Lab01-Imie-Nazwisko.tar.gz CppFiles

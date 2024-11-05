@@ -1,0 +1,1 @@
+g++ -o "/mnt/q/C++/C ++ (2)/ADT Set 2/ABT Set2/ABT Set2/bin/x64/Debug/ABT Set2.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack "/mnt/q/C++/C ++ (2)/ADT Set 2/ABT Set2/ABT Set2/obj/x64/Debug/Main.o"

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+Q:/programy_C_II/Graph7/main.cpp
+iostream
+-
+vector
+-
+sstream
+-
+fstream
+-
+limits.h
+-
+

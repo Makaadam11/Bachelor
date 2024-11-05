@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+Q:/programy_C_II/Graf5/main.cpp
+iostream
+-
+list
+-
+stack
+-
+vector
+-
+sstream
+-
+string
+-
+bits/stdc++.h
+-
+

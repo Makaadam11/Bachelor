@@ -1,0 +1,6 @@
+﻿  Starting remote build
+  Compiling sources:
+  main.cpp
+Q:\C++\AVL Tree\AVLTree\AVLTree\main.cpp(14,19): warning : conversion from ‘time_t’ {aka ‘long int’} to ‘unsigned int’ may change value [-Wconversion]
+  Linking objects
+  AVLTree.vcxproj -> Q:\C++\AVL Tree\AVLTree\AVLTree\bin\x64\Debug\AVLTree.out

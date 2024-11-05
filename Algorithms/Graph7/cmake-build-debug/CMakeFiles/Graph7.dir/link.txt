@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Graph7.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\Graph7.dir/objects.a @CMakeFiles\Graph7.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Graph7.dir/objects.a -Wl,--no-whole-archive  -o Graph7.exe -Wl,--out-implib,libGraph7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Graph7.dir\linklibs.rsp

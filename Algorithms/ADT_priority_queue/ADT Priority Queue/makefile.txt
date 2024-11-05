@@ -1,0 +1,6 @@
+
+all:
+    g++ main.cpp
+
+tar:
+	tar -cvzf Lab02-Adam-Mąka.tar.gz CppFiles

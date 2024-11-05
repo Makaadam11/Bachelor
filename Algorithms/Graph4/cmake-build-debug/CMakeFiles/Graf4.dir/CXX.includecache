@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+Q:/programy_C_II/Graf4/main.cpp
+iostream
+-
+list
+-
+stack
+-
+vector
+-
+sstream
+-
+fstream
+-
+string
+-
+

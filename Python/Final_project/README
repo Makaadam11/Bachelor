@@ -1,0 +1,73 @@
+Python Project 2022 - Adam Mąka
+
+This project implements Minimum Spanning Tree and Clustering problem for diffrent datasets from data_x.csv files.
+
+To start this application simply run it and type:
+1) number from 0-5 to pick diffrent datasets.
+2) method type rbf or knn
+3) number of clusters 
+
+Wait for result and visualization. Than in excel open files: distances.csv and clusters.csv -> choose column A -> go to Data -> text as columns -> choose delimiter as ',' (comma) and save changes. This will provide better view of data.
+ 
+----------------------------------------CODE---------------------------------------------
+in class Graph we have:
+
+    def __init__ - Initialize the number of vertices and create an empty graph
+
+    def addEdge(self, u, v, w) - function to add an edge to graph
+    
+    def find(self, parent, i) - A utility function to find set of an element i (uses path compression technique)
+
+    def union(self, parent, rank, x, y) - A function that does union of two sets of x and y (uses union by rank)
+                                         Attach smaller rank tree under root of high rank tree (Union by Rank) 
+                                         If ranks are same, then make one as rootand increment its rank by one
+     
+    def KruskalMST(self) - The main function to construct MST using Kruskal's algorithm:
+                         Step 1: Sort all the edges in non-decreasing order of their weight. 
+                         If we are not allowed to change the given graph, we can create a copy of graph
+                         Step 2: Pick the smallest edge and increment the index for next iteration
+
+
+SpectralClustering to metoda agregacji danych, która działa poprzez znajdowanie skupień w danych za pomocą analizy spektralnej
+macierzy sąsiedztwa. # Jeśli użyjesz parametru `assign_labels='kmeans' algorytm ten działa w następujący sposób:
+
+1) Obliczenie macierzy sąsiedztwa: Na początku algorytm oblicza macierz sąsiedztwa dla danych wejściowych. Macierz sąsiedztwa 
+jest macierzą rzędową, w której wiersze i kolumny odpowiadają poszczególnym próbkom danych, a wartości na jej przekątnej są równe 0. 
+Wartości poza przekątną są równe 1, jeśli dane próbki są sąsiadami, lub 0, jeśli nie są. Sąsiadami nazywamy próbki, które są blisko siebie według określonej miary odległości.
+
+2) Obliczenie macierzy laplasjanu: Następnie algorytm oblicza macierz laplasjanu, która jest pochodną macierzy sąsiedztwa.
+ Macierz ta jest używana do określenia podobieństwa między próbkami danych.
+
+3) Redukcja wymiarów: Następnie algorytm wykonuje redukcję wymiarów na macierzy laplasjanu, aby zmniejszyć wymiar danych wejściowych. 
+Redukcja wymiarów polega na znalezieniu kombinacji składowych macierzy, które najlepiej opisują dane wejściowe.
+
+4) Grupowanie danych: Na końcu algorytm grupuje dane wejściowe za pomocą metody k-średnich (kmeans), 
+wykorzystując zredukowane wymiary jako cechy. Metoda k-średnich działa poprzez iteracyjne przypisywanie każdej 
+próbki do najbliższej grupy (centroidu) i aktualizowanie centroidów w oparciu o nowe przypisania.
+
+
+Jeśli ustawisz parametr affinity na 'rbf' podczas wywoływania funkcji SpectralClustering z biblioteki scikit-learn, 
+algorytm będzie używać jądrowej funkcji RBF (Radial Basis Function, funkcja bazowa radialna) 
+do obliczenia macierzy podobieństwa między punktami danych. Jądrowa funkcja RBF to funkcja, która jest znormalizowana tak, 
+aby mieć wartość równą 1 dla punktu, w którym jest wywoływana, oraz malejącą wartość wraz z oddalaniem się od tego punktu.
+W praktyce oznacza to, że algorytm SpectralClustering będzie używał macierzy podobieństwa opartej na odległości euklidesowej między punktami danych. 
+Punkty blisko siebie będą miały wysokie podobieństwo, a punkty daleko od siebie będą miały niskie podobieństwo. 
+Algorytm klasteryzacji będzie następnie używał tej macierzy podobieństwa do grupowania punktów w klastry.
+Jądrowa funkcja RBF jest często używana w algorytmach klasteryzacji, ponieważ pozwala ona na uzyskanie dobrych wyników dla danych o dużym rozmiarze 
+lub gdy istnieją silne powiązania między punktami danych. 
+Jeśli jednak dane są szczególnie skomplikowane lub nieregularne, inne rodzaje jądrowych funkcji podobieństwa mogą działać lepiej.
+
+Jeśli ustawisz parametr affinity na 'nearest_neighbors' podczas wywoływania funkcji SpectralClustering z biblioteki scikit-learn, 
+algorytm będzie używał macierzy podobieństwa opartej na najbliższych sąsiadach punktów danych do obliczenia macierzy laplasjanu. 
+W tym przypadku macierz podobieństwa będzie miała wartość 1 dla par punktów, które są najbliższymi sąsiadami,  a 0 dla pozostałych par punktów.
+
+Ogólnie rzecz biorąc, algorytm SpectralClustering będzie używał macierzy podobieństwa opartej na najbliższych sąsiadach 
+do grupowania punktów w klastry w sposób, w którym punkty blisko siebie są bardziej prawdopodobne, że znajdą się w tym samym klasterze. 
+Ten rodzaj macierzy podobieństwa jest szczególnie przydatny w przypadku danych, w których istnieją silne powiązania między punktami blisko siebie.
+
+n_clusters: liczba klastrów.
+
+
+Plotting:
+plt.scatter(points[:, 0], points[:, 1], c=labels,s=25, cmap='viridis') - we use cluster labels as colours for       every point from MST algorithm.
+

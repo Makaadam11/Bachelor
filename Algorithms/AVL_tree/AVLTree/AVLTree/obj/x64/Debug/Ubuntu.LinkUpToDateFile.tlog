@@ -1,0 +1,1 @@
+g++ -o "/mnt/q/C++/AVL Tree/AVLTree/AVLTree/bin/x64/Debug/AVLTree.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack "/mnt/q/C++/AVL Tree/AVLTree/AVLTree/obj/x64/Debug/main.o" "/mnt/q/C++/AVL Tree/AVLTree/AVLTree/obj/x64/Debug/AVLTree.o"

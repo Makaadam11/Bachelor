@@ -1,0 +1,3 @@
+/Users/mikolaj-praca/CLionProjects/set_6/cmake-build-debug/CMakeFiles/set_7.dir
+/Users/mikolaj-praca/CLionProjects/set_6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mikolaj-praca/CLionProjects/set_6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

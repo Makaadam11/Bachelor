@@ -1,0 +1,1 @@
+g++ -o "/mnt/q/C++/C ++ (2)/ADT Priority Queue/ADT Priority Queue/bin/x64/Debug/ADT Priority Queue.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack "/mnt/q/C++/C ++ (2)/ADT Priority Queue/ADT Priority Queue/obj/x64/Debug/main.o"

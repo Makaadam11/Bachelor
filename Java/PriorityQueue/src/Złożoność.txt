@@ -1,0 +1,3 @@
+Złożoność funkcji add - O(1)
+Złożoność funkcji get - O(log(n))
+Złożoność funkcji remove - O(log(n))
